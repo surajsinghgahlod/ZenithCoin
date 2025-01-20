@@ -9,31 +9,125 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/atomizer-css@latest/dist/atomizer.min.css">
     <!-- CUSTOM CSS LINK  -->
     <link rel="stylesheet" href="assets/style.css">
+    <!-- MONTSERRAT FONT LINK  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- HEADER - BANNER SECTION  -->
     <header>
         <nav class="navbar">
-            <img src="./assets/img/brand-logo.png" alt="logo" class="logo">
-            <ul class="nav-links">
-                <li class="nav-link active">Home</li>
-                <li class="nav-link">Buy</li>
-                <li class="nav-link">Sell</li>
-                <li class="nav-link">Listing</li>
-                <li class="nav-link">Support</li>
-            </ul>
-            <button type="button" class="btn btn-small">Login</button>
+            <img src="./assets/img/brand-logo.png" class="banner-side" alt="logo" class="logo">
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li class="nav-link active">Home</li>
+                    <li class="nav-link">Buy</li>
+                    <li class="nav-link">Sell</li>
+                    <li class="nav-link">Listing</li>
+                    <li class="nav-link">Support</li>
+                </ul>
+                <button type="button" class="btn btn-small">Login</button>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="banner">
+        <section class="banner container">
             <div class="banner-content">
-                <h2>Revolutionize Your Digital Transactions with <span>ZenithCoin</span></h2>
-                <p>Fast, Secure, and Decentralized <br/>  Cryptocurrency for the Future</p>
+                <h1>Revolutionize Your Digital Transactions with <span class="gradient-text">ZenithCoin</span></h1>
+                <h4>Fast, Secure, and Decentralized <br/>  Cryptocurrency for the Future</h4>
                 <hr class="hr-gradient">
+                <div class="btn-group mt-80">
+                    <button class="btn">Get Started</button>
+                    <button class="btn btn-transparent"><img src="./assets/icons/icon-play.svg" alt="play-icon"> Watch Video</button>
+                </div>
+            </div>
+            <div class="banner-image">
+                <img src="./assets/img/banner-side.png" alt="banner-image">
+            </div>
+        </section>
+        <!-- ABOUT SECTION  -->
+        <section class="section-about">
+            <div class="container container-about">
+                <img src="./assets/img/about-coins.png" alt="about-coins">
+                <div class="about-content">
+                    <h6 class="sub-heading mb-14">About us</h6>
+                    <h2 class="mb-24">What is Zenithcoin</h2>
+                    <p class="mb-30">
+                        Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        <br>
+                        <br>
+                        Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem. 
+                    </p>
+                    <button type="button" class="btn">View More</button>
+                </div>
+            </div>
+        </section>
+        <!-- WORK SECTION  -->
+        <section class="section-work">
+            <div class="container work-container">
+                <div class="work-content">
+                    <h6 class="sub-heading sub-heading-2 mb-14">PROCESS</h6>
+                    <h2 class="mb-24">How  Zenithcoin Works</h2>
+                    <p class="mb-30">
+                        operates on a blockchain network where each transaction is recorded on a distributed ledger. Miners validate transactions through a consensus mechanism, ensuring all records are
+                    </p>
+                </div>
+                <img src="./assets/img/work-flow-chart.svg" alt="work-flow-chart">
+                <img src="./assets/img/work-flow-chart-sm.svg" alt="work-flow-chart-sm" class="img-mobile">
+            </div>
+        </section>
+        <!-- JOIN SECTION  -->
+        <section class="section-join">
+            <div class="container container-join">
+                <div class="join-content">
+                    <h6 class="sub-heading mb-14"> Get Involved</h6>
+                    <h2 class="mb-14">Join the Community</h2>
+                    <p class="mb-40">
+                        Be part of the future of digital finance. Whether you're a developer, investor, or enthusiast, there are many ways to get involved with zenithcoin.
+                    </p>
+                    <button type="button" class="btn">Join Now</button>
+                </div>
+                <img src="./assets/img/community.png" alt="community">
             </div>
         </section>
     </main>
-    <footer></footer>
+    <!-- FOOTER SECTION  -->
+    <footer>
+        <div class="container container-footer">
+            <div class="footer-content maw-360">
+                <img src="./assets/img/brand-logo.png" alt="brand-logo" class="mb-24">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
+            </div>
+            <ul class="footer-content footer-links">
+                <h6 class="mb-40">Quick Links</h6>
+                <li class="footer-link-active"><a href="#">Home</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Listing</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <ul class="footer-content footer-links">
+                <h6 class="mb-40">Contact</h6>
+                <li><img src="./assets/icons/icon-call.svg" alt="icon-call"> 257388-467</li>
+                <li><img src="./assets/icons/icon-call.svg" alt="icon-call"> 257388-467</li>
+                <li><img src="./assets/icons/icon-mail.svg" alt="icon-mail"> Sgfuduri@gmail.com</li>
+            </ul>
+            <div class="footer-content">
+                <h6 class="mb-40">Social Connects</h6>
+                <div class="footer-connect-icons">
+                    <button type="button"><img src="./assets/icons/icon-insta.svg" alt="icon-insta.svg"></button>
+                    <button type="button"><img src="./assets/icons/icon-twitter.svg" alt="icon-twitter"></button>
+                    <button type="button"><img src="./assets/icons/icon-fb.svg" alt="icon-fb.svg"></button>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-footer">
+        <div class="container footer-bottom">
+            <span>2024 Tech Innovations. All rights reserved. Unauthorized duplication or distribution is prohibited.</span>
+            <span>Privacy Policy - Terms of Service</span>
+        </div>
+    </footer>
     
     <script src="assets/script.js"></script>
 </body>
